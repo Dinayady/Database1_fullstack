@@ -1,0 +1,18 @@
+.header {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: transparent;
+  /* background-color: #30352e; */
+}
+
+.teamIcon {
+  font-size: 26px;
+  margin-right: 12px;
+}
+
+.authorization {
+  height: 30px;
+}
