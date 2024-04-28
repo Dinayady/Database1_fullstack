@@ -17,7 +17,7 @@ export const Register = () => {
             <PasInput name='password' placeholder='Password...' />
             <PasInput name='confirmPassword' placeholder='Repeat password...' />
             <CustomBtn type='primary' htmlType='submit'>
-              Login
+              Signup
             </CustomBtn>
           </Form>
           <Space direction='vertical' size='large'>

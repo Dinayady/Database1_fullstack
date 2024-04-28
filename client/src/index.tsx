@@ -9,6 +9,7 @@ import reportWebVitals from './reportWebVitals';
 import { Paths } from './paths';
 import { store } from './app/store';
 import { Home } from './pages/home/Home';
+import { Auth } from './features/auth/auth';
 import { Login } from './pages/login/Login';
 import { Register } from './pages/register/Register';
 
@@ -40,7 +41,9 @@ root.render(
           algorithm: theme.darkAlgorithm,
         }}
       >
-        <RouterProvider router={router} />
+        <Auth>
+          <RouterProvider router={router} />
+        </Auth>
       </ConfigProvider>
     </Provider>
   </React.StrictMode>
