@@ -12,9 +12,11 @@ import { Home } from './pages/home/Home';
 import { Auth } from './features/auth/auth';
 import { Login } from './pages/login/Login';
 import { Status } from './pages/status/Status';
+import { Employee } from './pages/employee/Employee';
 import { Register } from './pages/register/Register';
 import { Employees } from './pages/employees/Employees';
 import { AddEmployee } from './pages/addEmployee/AddEmployee';
+import { EditEmployee } from './pages/editEmployee/EditEmployee';
 
 import './index.css';
 
@@ -38,6 +40,14 @@ const router = createBrowserRouter([
   {
     path: Paths.employeeAdd,
     element: <AddEmployee />,
+  },
+  {
+    path: `${Paths.employee}/:id`,
+    element: <Employee />,
+  },
+  {
+    path: `${Paths.employeeEdit}/:id`,
+    element: <EditEmployee />,
   },
   {
     path: `${Paths.status}/:status`,

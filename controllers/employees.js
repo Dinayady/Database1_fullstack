@@ -15,7 +15,7 @@ const all = async (req, res) => {
 };
 
 /**
- * @route GET /api/employees/add
+ * @route POST /api/employees/add
  * @desc Add one employees
  * @access Private
  */

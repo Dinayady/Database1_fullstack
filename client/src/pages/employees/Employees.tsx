@@ -12,11 +12,13 @@ import { selectUser } from '../../features/auth/authSlice';
 import { Layout } from '../../components/layout';
 import { Paths } from '../../paths';
 
+import styles from './style.module.css';
+
 const columns: ColumnsType<Employee> = [
   {
     title: 'Name',
     dataIndex: 'firstName',
-    render: (text: string) => <a>{text}</a>,
+    render: (text: string) => <span className={styles.link}>{text}</span>,
     key: 'firstName',
   },
   {
