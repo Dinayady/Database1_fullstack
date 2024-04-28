@@ -11,7 +11,10 @@ import { store } from './app/store';
 import { Home } from './pages/home/Home';
 import { Auth } from './features/auth/auth';
 import { Login } from './pages/login/Login';
+import { Status } from './pages/status/Status';
 import { Register } from './pages/register/Register';
+import { Employees } from './pages/employees/Employees';
+import { AddEmployee } from './pages/addEmployee/AddEmployee';
 
 import './index.css';
 
@@ -21,12 +24,24 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
+    path: Paths.employees,
+    element: <Employees />,
+  },
+  {
     path: Paths.login,
     element: <Login />,
   },
   {
     path: Paths.register,
     element: <Register />,
+  },
+  {
+    path: Paths.employeeAdd,
+    element: <AddEmployee />,
+  },
+  {
+    path: `${Paths.status}/:status`,
+    element: <Status />,
   },
 ]);
 

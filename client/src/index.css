@@ -15,9 +15,14 @@ body > div {
 body {
   font-family: 'Work Sans', sans-serif;
   background-color: #455442;
-  color: #b4b198;
+  color: #d7d4b8;
 }
 
 a {
   text-decoration: none;
+  color: #d7d4b8;
+}
+
+a:hover {
+  color: #c7c28f;
 }

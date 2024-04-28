@@ -27,7 +27,7 @@ export const CustomBtn = ({
         theme={{
           components: {
             Button: {
-              colorLink: '#b4b198',
+              colorLink: '#d7d4b8',
               colorLinkActive: '#838064',
               colorLinkHover: '#c7c28f',
             },
